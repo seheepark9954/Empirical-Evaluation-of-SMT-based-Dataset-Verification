@@ -1,3 +1,5 @@
+;credit_duration column
+
 (set-logic ALL)
 ; rows (m) = 100
 ; cols (n) = 25

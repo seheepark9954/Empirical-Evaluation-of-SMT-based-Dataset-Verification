@@ -1,4 +1,4 @@
-(set-logic QF_AUFLIRA)
+(set-logic ALL)
 ; ---- Auto-generated from CSV ----
 ; rows (m) = 1000
 ; cols (n) = 25

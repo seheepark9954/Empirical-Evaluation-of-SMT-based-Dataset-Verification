@@ -1,8 +1,8 @@
-(set-logic ALL)
-
 ; Normalized Portuguese Bank Dataset (numeric features only)
 ; Min-Max scaled to [-1, 1]
 ; Numeric column: duration (index 11)
+(set-logic ALL)
+
 
 (define-fun m () Int 100)
 (define-fun n () Int 1)

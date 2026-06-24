@@ -1,5 +1,7 @@
-; bank-full.csv → SMT-LIB2 (data only)
+; bank-full.csv → SMT-LIB2 (data only) 
 ; D[row][col] = encoded feature value
+; Column: last_contact duration
+(set-logic ALL)
 
 (declare-const D (Array Int (Array Int Int)))
 

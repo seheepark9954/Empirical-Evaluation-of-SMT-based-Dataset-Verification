@@ -1,9 +1,9 @@
 import csv
 
-N = 900  # the number of row i want to convert
+N = 100  # the number of row i want to convert
 out_file = f"{N}_labels_only.smt2"
 
-labels = []
+labels = [1]
 
 with open("german_numeric.csv", newline="") as f:
     reader = csv.reader(f)
