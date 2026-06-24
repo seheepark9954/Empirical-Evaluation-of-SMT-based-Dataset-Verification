@@ -153,8 +153,8 @@ Requirements
 
 ⸻
 
-Authors
+# Authors
 
-Sehee Park
+Sehee Park, Dominik Geißler, Andrei Aleksandrov, and Kim Völlinger
 
 Artifact accompanying the SEFM 2026 submission.
