@@ -19,8 +19,8 @@ Scripts used to preprocess the German Credit dataset and generate SMT-LIB benchm
 
 Verification benchmarks for:
 
-- Balancedness
-- Min-max validity
+- Class balance
+- Min-max 
 - Range validity
 
 Each benchmark is provided in one or more specification styles:
@@ -39,8 +39,8 @@ Scripts used to preprocess the Portuguese Bank Marketing dataset and generate SM
 
 Verification benchmarks for:
 
-- Balancedness
-- Min-max validity
+- Class balance
+- Min-max 
 - Range validity
 - Well-distributedness
 
@@ -51,8 +51,8 @@ Verification benchmarks for:
 The repository contains SMT-LIB benchmark instances for the following dataset quality properties:
 
 - Range validity
-- Min-max validity
-- Balancedness
+- Min-max 
+- Class balance
 - Well-distributedness
 
 ---
