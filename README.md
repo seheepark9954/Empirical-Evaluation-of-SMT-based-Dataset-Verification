@@ -20,7 +20,7 @@ Scripts used to preprocess the German Credit dataset and generate SMT-LIB benchm
 Verification benchmarks for:
 
 - Class balance
-- Min-max 
+- Min-max
 - Range validity
 
 Each benchmark is provided in one or more specification styles:
@@ -40,7 +40,7 @@ Scripts used to preprocess the Portuguese Bank Marketing dataset and generate SM
 Verification benchmarks for:
 
 - Class balance
-- Min-max 
+- Min-max
 - Range validity
 - Well-distributedness
 
@@ -51,7 +51,7 @@ Verification benchmarks for:
 The repository contains SMT-LIB benchmark instances for the following dataset quality properties:
 
 - Range validity
-- Min-max 
+- Min-max
 - Class balance
 - Well-distributedness
 
@@ -92,33 +92,46 @@ portuguese_verification_scripts/
     └── column_slice_vs_nested_column_slice_grounding/
 ```
 
-### Normal Distance vs Squared Distance
+### Original Distance vs Squared Distance
 
 The well-distributedness property is provided in two alternative formulations:
 
-- normal-distance
+- original-distance
 - squared-distance
 
-Additional experiments evaluate the effect of replacing nested column-slice encoding with column-slice encoding.
+The original-distance formulation uses a square-root-based distance expression, while the squared-distance formulation eliminates the square root and compares against the squared threshold.
+
+Additional experiments compare nested column-slice encoding and column-slice encoding for both formulations.
 
 Location:
 
 ```text
 portuguese_verification_scripts/
 └── portuguese_welldistributed_duration_norm/
+    └── column-slice-encoding/
 ```
 
 ---
 
 ## Equivalence Checking
 
-The repository contains SMT-LIB scripts for checking semantic equivalence between alternative specification styles.
+The repository contains SMT-LIB scripts for checking semantic equivalence between alternative specification styles and formulations.
 
 Examples include:
 
 - baseline vs grounding
 - baseline vs recursive
-- normal-distance vs squared-distance
+- original-distance vs squared-distance
+
+The file
+
+```text
+portuguese_verification_scripts/
+└── portuguese_welldistributed_duration_norm/
+    └── original_dist_equals_squared_dist.smt2
+```
+
+checks the equivalence between the original-distance and squared-distance formulations.
 
 ---
 
@@ -126,10 +139,14 @@ Examples include:
 
 The repository contains:
 
-- 400+ SMT-LIB benchmark instances
+- SMT-LIB benchmark instances
+
 - preprocessing scripts
+
 - benchmark generators
+
 - equivalence-checking scripts
+
 - experimental artifacts used in the SEFM 2026 evaluation
 
 ---
